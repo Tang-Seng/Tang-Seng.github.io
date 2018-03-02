@@ -46,7 +46,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="http://www.baidu.com/link?url=Mhrjuxko3zwXrzDaJpp0x4kKyLk1FsVT5t7snVVa5Tj1cJjHNq3XGo3B798BOKfSXCoyRt1rgm50vv23Y8ueiMpuxMyIV9ue3d8V6Ju3pQJCFjQIubUF7YMookq8xJTsrSE4QccFVPw27iZBHDXidSrOsKnI8j6ktzSS4M0BV5Pg5WiwA_5KPP9NuHNMAqFqe44vLsPPJjQD6ypdWKDx-YeEjmiIUYhP6zag4vDodSYfMXhy7kgTVhqf-rw50XZ4mtn7A_vVVhWvr12reZOBhhaPmbyJBremB_VBN_FHr-sAc0upHHjoWoqs3zszc6YJY6k8TJ511oZ82gIUKMAX2GnXNo5AuFzWada1xr4QrpZjwy3GsuFuotJhARkQoBI5RAeuUhDtQbjA955KDNi0A5V8lbNOwNWCneU9a_qWmdOP3e4RKv69rAF6iyqdaFVHLBxVLtBUs9XAjTg5iVpPUefYtnS8FMsqI78CFQ25KoQVZpiZdR3xPE3WAvdsPK5PSP3A0NeatSwzSZIuXZa_MYFqj_4ZbTxEisBDnnq245ogWIN036f9QlyonO0NweSHeUdikHxcigeel4dhWk5umeIqwaUutnxmctmEwxKZfIe&amp;wd=&amp;eqid=8a192b040000e883000000065a992739" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">huangqian</a></h1>
@@ -106,7 +106,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="http://www.baidu.com/link?url=Mhrjuxko3zwXrzDaJpp0x4kKyLk1FsVT5t7snVVa5Tj1cJjHNq3XGo3B798BOKfSXCoyRt1rgm50vv23Y8ueiMpuxMyIV9ue3d8V6Ju3pQJCFjQIubUF7YMookq8xJTsrSE4QccFVPw27iZBHDXidSrOsKnI8j6ktzSS4M0BV5Pg5WiwA_5KPP9NuHNMAqFqe44vLsPPJjQD6ypdWKDx-YeEjmiIUYhP6zag4vDodSYfMXhy7kgTVhqf-rw50XZ4mtn7A_vVVhWvr12reZOBhhaPmbyJBremB_VBN_FHr-sAc0upHHjoWoqs3zszc6YJY6k8TJ511oZ82gIUKMAX2GnXNo5AuFzWada1xr4QrpZjwy3GsuFuotJhARkQoBI5RAeuUhDtQbjA955KDNi0A5V8lbNOwNWCneU9a_qWmdOP3e4RKv69rAF6iyqdaFVHLBxVLtBUs9XAjTg5iVpPUefYtnS8FMsqI78CFQ25KoQVZpiZdR3xPE3WAvdsPK5PSP3A0NeatSwzSZIuXZa_MYFqj_4ZbTxEisBDnnq245ogWIN036f9QlyonO0NweSHeUdikHxcigeel4dhWk5umeIqwaUutnxmctmEwxKZfIe&amp;wd=&amp;eqid=8a192b040000e883000000065a992739" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">huangqian</h1>
@@ -158,6 +158,92 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-java-static" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/02/java-static/">[java学习笔记] static关键字</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/02/java-static/" class="archive-article-date">
+  	<time datetime="2018-03-02T09:55:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-02</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="static关键字"><a href="#static关键字" class="headerlink" title="static关键字"></a>static关键字</h1><ul>
+<li>一个类中声明为static的成员变量或方法不会和该类的任何实例联系在一起。因此不用创建该类的对象也可以访问static的方法或变量。所以可以通过类名访问变量或方法。</li>
+<li>通过实例访问static变量也是合法的，但是容易产生误解。</li>
+<li>static变量只占用一份存储空间。</li>
+<li>static变量被该类所有实例共享</li>
+</ul>
+<h1 id="static变量初始化"><a href="#static变量初始化" class="headerlink" title="static变量初始化"></a>static变量初始化</h1><ul>
+<li>static变量只被初始化一次，只有在第一次创建该类实例或访问static数据时才进行初始化，之后的实例创建和访问都不再自动初始化。</li>
+<li>static在任何对象创建之前完成初始化</li>
+<li>static在任何static方法执行前之前完成初始化</li>
+</ul>
+<h1 id="为什么static环境不能直接访问非static变量"><a href="#为什么static环境不能直接访问非static变量" class="headerlink" title="为什么static环境不能直接访问非static变量"></a>为什么static环境不能直接访问非static变量</h1><p>调用static方法不需要创建任何实例，static方法是在无关任何实例的情况下执行的。而非static变量必须和某一实例联系在一起（必须指定和它一起运行的对象）。static方法中如果访问某个非static变量，编译器不知道要访问的是哪个实例的变量，所以不能通过编译。</p>
+<h1 id="为什么static方法不能被覆盖"><a href="#为什么static方法不能被覆盖" class="headerlink" title="为什么static方法不能被覆盖"></a>为什么static方法不能被覆盖</h1><p>因为override是运行时动态绑定的，static方法是静态绑定的<br>覆盖：子类和父类存在相同的方法，子类的这个方法就覆盖了与父类相同的方法<br>方法的绑定：对象调用方法的时候，与方法所在的类关联起来，选择哪一个方法去调用<br>静态绑定：程序执行前方法已经被绑定<br>动态绑定：根据运行时的实际类型进行绑定，在编译的时候不知道对象实际类型，只知道申明的类型。在运行时才知道对象的实际类型。java有它自己的机制去找到正确的方法。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java static关键字</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/03/02/java-static/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -321,6 +407,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Java static关键字</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
